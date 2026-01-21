@@ -55,9 +55,9 @@ format:
             anchor?.appendChild(image)
             sidebar?.prepend(anchor)
           });
-        </script>
+        </script> 
+        <script defer src="https://events.imago.ac.uk/script.js" data-website-id="e4bb6d0e-f873-4273-94d1-b7f06bc39620"></script>
   pdf:
     documentclass: scrreprt
 
 editor: visual
-
