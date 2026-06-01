@@ -1,0 +1,26 @@
+% PDF book styling adapted from the UN-CEBD Mobile Phone Data Handbook.
+\usepackage{fontspec}
+\setmainfont[
+  Extension = .otf,
+  UprightFont = *-regular,
+  BoldFont = *-bold,
+  ItalicFont = *-italic,
+  BoldItalicFont = *-bolditalic
+]{texgyrepagella}
+
+\AtBeginDocument{\let\maketitle\relax}
+
+\usepackage{eso-pic}
+
+\usepackage{float}
+\floatplacement{figure}{!htb}
+\floatplacement{table}{!htb}
+
+\usepackage{caption}
+\captionsetup{labelfont=bf}
+
+\makeatletter
+\@beginparpenalty=10000
+\makeatother
+
+\raggedbottom
