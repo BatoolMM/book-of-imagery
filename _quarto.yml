@@ -20,16 +20,20 @@ book:
   repo-url: https://github.com/Imago-SDRUK/book-of-imagery
   repo-branch: main
   repo-actions: [edit, issue]
+  downloads: [pdf]
 
   chapters:
     - index.qmd
-    - chapters/intro.qmd
-    - chapters/image-data.qmd
-    - chapters/clive.qmd
-    - chapters/psf.qmd
-    - chapters/rgb.qmd
-    # - chapters/synthesis.qmd
-    # - chapters/way-forward.qmd
+    - part: "Foundations"
+      chapters:
+        - chapters/intro.qmd
+        - chapters/image-data.qmd
+    - part: "Data products"
+      chapters:
+        - chapters/clive.qmd
+        - chapters/psf.qmd
+        - chapters/rgb.qmd
+    - part: "Social research and policy application"
     - chapters/references.qmd
 
 bibliography: references.bib
@@ -58,6 +62,13 @@ format:
         </script>
   pdf:
     documentclass: scrreprt
+    papersize: a4
+    pdf-engine: xelatex
+    toc: true
+    number-sections: true
+    number-depth: 3
+    colorlinks: true
+    include-in-header: style/pdf-preamble.tex
+    include-before-body: style/pdf-before-body.tex
 
 editor: visual
-
