@@ -1,3 +1,8 @@
+---
+aliases:
+  - psf.html
+---
+
 # SPF: Sun Probability Framework
 
 ::: {.callout-warning icon="false"}
